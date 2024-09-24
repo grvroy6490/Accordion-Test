@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.accordion {
+  width: 700px;
+}
+.accordion .accordion-item {
+  width: 100%;
+}
+.accordion .accordion-item .accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #9d9d9d;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.accordion .accordion-item .accordion-header .icon {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion .accordion-item .accordion-body {
+  padding: 15px;
+  overflow: hidden;
+  display: none;
+}
+.accordion .accordion-item.active .accordion-header .icon {
+  transform: rotate(180deg);
+}/*# sourceMappingURL=app.css.map */
